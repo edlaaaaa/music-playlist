@@ -98,7 +98,7 @@ const initialTrackList = [
   },
 ]
 
-class MusicPlaylist extends Components {
+class MusicPlaylist extends Component {
   state = {
     searchInput: '',
     playList: initialTrackList,
@@ -110,7 +110,7 @@ class MusicPlaylist extends Components {
 
   onClickDeleteTrack = id => {
     const {playList} = this.state
-    const updatedPlaylist = playList.filter(each => each.id === id)
+    const updatedPlaylist = playList.filter(each => each.id !== id)
     this.setState({playList: updatedPlaylist})
   }
 
