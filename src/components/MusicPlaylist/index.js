@@ -1,4 +1,4 @@
-import {Components} from 'react'
+import {Component} from 'react'
 
 import MusicItem from '../MusicItem'
 
