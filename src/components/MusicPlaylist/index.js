@@ -136,10 +136,10 @@ class MusicPlaylist extends Component {
         </ArtistBg>
         <PlayListContainer>
           <PlayListHeading>Songs PlayList</PlayListHeading>
-          <searchInput
+          <SearchInput
             type="search"
             value={searchInput}
-            placeholder="search"
+            placeholder="Search"
             onChange={this.onChangeSearchInput}
           />
         </PlayListContainer>
